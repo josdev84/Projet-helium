@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    font-family: inter, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(23, 23, 23);
+    color: rgb(246, 243, 243);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header-left {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 7rem;
+}
+.header h3 {
+    font-size: 2rem;
+}
+
+#modem {
+    width: 100%;
+}
+
+.infos {
+    background: black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+button {
+    display: grid;
+    width: 40%;
+    box-sizing: border-box;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #5256FF;
+    color: rgb(252, 251, 251);
+
+}
+
+.investors {
+    display: grid;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}   
+.img-container img {
+    height: 60px;
+}
+
+/* --------------Media Queries  pour etre la page responsive-------------- */
+
+@media screen and (max-width: 1200px) {
+    .img-container  {
+        margin: auto;
+    }    
+}
+
+@media screen and (max-width: 870px) {
+    h1 {
+       font-size: 2.5rem; 
+    }
+
+    .header-left-container h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 710px ) {
+    .infos {
+        display: block;
+    }
+    button {
+        margin: 5px auto;
+    }
+}
+
+
+
+@media screen and (max-width: 592px) {
+    nav {
+        grid-template-columns: 35% 65%;
+    }
+
+    nav ul {
+        font-size: 0.7rem;
+    }
+
+    .header {
+        display: block;
+    }
+
+
+    .img-container img{
+       height: 70px;
+    }
+}
+
+@media screen and (max-width:440px ) {
+    .img-container img {
+        height: 35px;
+    }
+}
